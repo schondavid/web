@@ -1,0 +1,15 @@
+[Unit]
+Description=website
+After=network.target
+
+[Service]
+Type=simple
+User=webuser
+Group=webuser
+WorkingDirectory=/var/www/web
+ExecStart=/usr/bin/python3 -m http.server 8000
+RestartSec=2
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
