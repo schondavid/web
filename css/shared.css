@@ -11,6 +11,10 @@
   --magenta: #4c0049;
   --red: #5e0009;
   --yellow: #6e5600;
+
+  --font-weight-normal: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
 }
 body {
   display: flex;
@@ -22,6 +26,8 @@ body {
 
   font-family: "JetBrains Mono", monospace;
   font-size: 14pt;
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight-normal);
   background-color: var(--grey2);
   color: var(--cyan);
 }
@@ -102,8 +108,8 @@ code {
 }
 
 ::selection {
-  background: var(--cyan);
+  background: var(--grey3);
 }
 ::-moz-selection {
-  background: var(--cyan);
+  background: var(--grey3);
 }
