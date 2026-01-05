@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("filesLoaded", () => {
   const nav = document.querySelector(".nav.left");
   const content = document.querySelector(".text");
 
