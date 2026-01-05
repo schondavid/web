@@ -1,0 +1,52 @@
+@import "shared.css";
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media screen and (max-width: 300px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.project {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  height: 300px;
+
+  overflow: hidden;
+
+  text-decoration: none;
+  color: var(--cyan);
+}
+
+a.project:hover {
+  background-color: var(--grey1);
+}
+
+a.project > .title {
+  font-size: 16pt;
+  margin-top: 4px;
+  padding-left: 8px;
+}
+
+a.project > .subtitle {
+  font-size: 12pt;
+  color: var(--gray);
+  padding-left: 8px;
+
+  margin-bottom: 8px;
+}
+
+a.project > img {
+  outline: 1px solid black;
+
+  flex-grow: 1;
+
+  object-fit: cover;
+}

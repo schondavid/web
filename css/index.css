@@ -1,0 +1,80 @@
+@import "shared.css";
+
+div.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 0 auto;
+
+  flex-grow: 1;
+  width: calc(min(100%, 900px));
+}
+
+div.name {
+  font-size: 50pt;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  div.name {
+    font-size: 34pt;
+  }
+}
+
+ul.nav {
+  font-size: 16pt;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 512px) {
+  ul.nav {
+    text-align: center;
+    flex-direction: column;
+    gap: 3pt;
+  }
+}
+
+.nav li {
+  list-style: none;
+}
+
+div.art {
+  font-family: monospace;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  margin-top: 2rem;
+}
+
+div.art p {
+  margin: 0;
+  white-space: pre;
+}
+
+div.art img {
+  height: 150px;
+  margin: auto 0;
+  opacity: 0%;
+  transition: opacity 5s ease-in-out;
+}
+
+/* https://stackoverflow.com/a/14068216 */
+img.no-smooth {
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Universal support since 2021   */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}

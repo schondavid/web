@@ -1,0 +1,182 @@
+@import "shared.css";
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+* + h1 {
+  margin: 1rem 0 0 0;
+}
+
+* + h2 {
+  margin: 0.8rem 0 0 0;
+}
+
+* + h3 {
+  margin: 0.3rem 0 0 0;
+}
+
+:not(.section) + .subsection {
+  padding-top: 0.5rem;
+}
+
+ul.entries {
+  display: inline-block;
+
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style: none
+}
+
+ul.entries.wide {
+  padding: 0;
+}
+
+* + div.section {
+  margin: 1rem 0 0 0;
+}
+
+ul.entries > li {
+  overflow-x: hidden;
+}
+
+ul.entries > li > span:first-child {
+  max-width: 60%;
+  background: var(--grey2);
+  float: left;
+  padding-right: 0.3rem;
+}
+
+ul.entries > li > span:last-child {
+  background: var(--grey2);
+  float: right;
+  padding-left: 0.3rem;
+}
+
+ul.entries > li.future {
+  color: var(--grey3);
+}
+
+div.text {
+  display: flex;
+  flex-direction: column;
+}
+
+div.text > p {
+  margin: 0.8em 0;
+}
+
+div.text li {
+  margin: 0.3em 0;
+}
+
+div.text li > p {
+  margin: 0;
+}
+
+div.text > div.note {
+  font-style: italic;
+  color: var(--green);
+}
+
+div.text > div.center {
+  margin: 1em 0 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+div.text > p.quote {
+  margin: 0 0 1rem 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--grey1);
+  color: var(--gray);
+  font-style: italic;
+}
+
+div.text > div.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+div.text > div.image > img {
+  outline: 1px solid black;
+
+  max-height: 600px;
+  max-width: 100%;
+
+  height: auto;
+  width: auto;
+}
+
+div.text ul, div.text ol {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  div.text > div.image {
+    margin: 1rem 0;
+  }
+}
+
+div.code {
+  font-family: monospace;
+  margin: 0.5rem;
+  padding: 0.5em;
+  border-radius: 5px;
+
+  overflow-x: scroll;
+}
+
+div.code > pre {
+  margin: 0;
+  font-size: 10pt;
+}
+
+span[role="math"] > svg {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+details > summary {
+  cursor: pointer;
+}
+
+figure {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+figcaption {
+  margin-top: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 50%;
+}
+
+.footnote-body {
+  margin-right: 0.5em;
+}
+
+.footnotes > div {
+  font-size: 10pt;
+  margin-bottom: 1em;
+}
+
+.nav.left {
+  position: fixed
+}

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Iosevka";
+  src: url("/fonts/iosevka-regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("/fonts/iosevka-bold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("/fonts/iosevka-bolditalic.ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("/fonts/iosevka-italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+
+:root {
+  --blue: #005078;
+  --cyan: #007676;
+  --green: #015825;
+  --grey1: #0a0b10;
+  --grey2: #1c1d23;
+  --grey3: #2c2e33;
+  --grey4: #4f5258;
+  --magenta: #4c0049;
+  --red: #5e0009;
+  --yellow: #6e5600;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+  margin: 0 2rem;
+
+  font-family: "Iosevka";
+  font-size: 14pt;
+  background-color: var(--grey2);
+  color: var(--cyan);
+}
+
+body > .footer {
+  padding: 1rem 0;
+  width: 100%;
+
+  text-align: center;
+  color: var(--grey4);
+  font-size: 10pt;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--lightblue);
+}
+
+
+div.main {
+  display: flex;
+  flex-direction: column;
+
+  width: calc(min(100%, 900px));
+  flex-grow: 1;
+
+  margin: 0 auto;
+}
+
+div.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  width: 100%;
+  margin: 2rem 0;
+}
+
+div.header > div.center {
+  text-align: center;
+}
+
+div.header > div.center > div.title {
+  font-size: 28pt;
+}
+
+div.header > div.center > div.subtitle {
+  font-size: 14pt;
+  color: var(--grey4);
+}
+
+code {
+  padding: 0 0.2em;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-family: "Cascadia Code";
+}
+
+@media screen and (max-width: 480px) {
+  div.header {
+    margin: 1rem 0;
+  }
+
+  div.header > div.center > div.title {
+    font-size: 20pt;
+  }
+
+  div.header > div.center > div.subtitle {
+    font-size: 12pt;
+  }
+
+  div.header > div.nav {
+    font-size: 10pt;
+  }
+}
+
+::selection {
+  background: var(--cyan);
+}
+::-moz-selection {
+  background: var(--cyan);
+}

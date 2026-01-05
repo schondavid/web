@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/css/articles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.min.js">
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/contrib/auto-render.min.js">
+    </script>
+    <title>schondavid's blog</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav left">
+        <div><a href="/">home</a></div>
+        <div><a href="/articles">articles</a></div>
+      </div>
+      <div class="center">
+        <div class="title">Example Post</div>
+        <div class="subtitle">13.11.2025</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="text">
+        <div class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+        <h2>Overview</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis.</p>
+        <pre><code data-lang="rust"><span style="color: #74747c">//</span><span style="color: #74747c"> An 8-byte-aligned address.</span><br><span style="color: #d73948">pub</span> <span style="color: #d73948">struct</span> <span style="color: #4b69c6">Addr</span>(<span style="color: #d73948">*const</span> <span style="color: #d73948">u64</span>);<br><br><span style="color: #74747c">//</span><span style="color: #74747c"> Returns a 16-byte aligned address.</span><br><span style="color: #d73948">fn</span> <span style="color: #4b69c6">alloc_double_word</span>(<span style="color: #d73948">&amp;</span><span style="color: #d73948">mut</span> self) -> <span style="color: #4b69c6">Option</span>&lt;Addr><br><br><span style="color: #74747c">//</span><span style="color: #74747c"> Frees an 8-byte aligned address.</span><br><span style="color: #d73948">fn</span> <span style="color: #4b69c6">free_single_word</span>(<span style="color: #d73948">&amp;</span><span style="color: #d73948">mut</span> self, addr: Addr)<br><br><span style="color: #74747c">//</span><span style="color: #74747c"> Frees a 16-byte aligned address.</span><br><span style="color: #d73948">fn</span> <span style="color: #4b69c6">free_double_word</span>(<span style="color: #d73948">&amp;</span><span style="color: #d73948">mut</span> self, addr: Addr)</code></pre>
+        <h3>Subsection</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna.</p>
+        <div class="footnotes"></div>
+      </div>
+    </div>
+  </body>
+  <div class="footer"></div>
+</html>
