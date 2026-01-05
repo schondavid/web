@@ -1,30 +1,4 @@
-@font-face {
-  font-family: "Iosevka";
-  src: url("/fonts/iosevka-regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Iosevka";
-  src: url("/fonts/iosevka-bold.ttf");
-  font-style: normal;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Iosevka";
-  src: url("/fonts/iosevka-bolditalic.ttf");
-  font-style: italic;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Iosevka";
-  src: url("/fonts/iosevka-italic.ttf");
-  font-style: italic;
-  font-weight: 400;
-}
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
 :root {
   --blue: #005078;
@@ -46,7 +20,7 @@ body {
   min-height: 100vh;
   margin: 0 2rem;
 
-  font-family: "Iosevka";
+  font-family: "JetBrains Mono", monospace;
   font-size: 14pt;
   background-color: var(--grey2);
   color: var(--cyan);
