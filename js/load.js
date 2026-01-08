@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const target = document.querySelector(".text");
   if (!target) return;
 
-  const files = ["pwn.html"];
+  const files = ["pwn.html", "rev.html", "web.html", "misc.html"];
 
   for (const file of files) {
     try {
